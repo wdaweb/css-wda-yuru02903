@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>media_query_WDA</title>
+  <style>
+    body {
+      position: relative;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      padding: 15px;
+    }
+
+    #wda img {
+      width: 250px;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+      width: 50%;
+    }
+
+    #wda {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    #wda span {
+      display: block;
+      font-weight: bolder;
+      font-size: 26px;
+    }
+
+
+    #wda span,
+    h1,
+    p {
+      margin: 0;
+      font-family: '微軟正黑體';
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    #wda,
+    #html,
+    #css,
+    #js,
+    #jquery,
+    #bootstrap,
+    #sass,
+    #vuejs {
+      position: relative;
+    }
+
+    #html::after,
+    #css::after,
+    #js::after,
+    #jquery::after,
+    #bootstrap::after,
+    #sass::after,
+    #vuejs::after {
+      content: "";
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      position: absolute;
+      top: 0;
+      left: 0
+    }
+
+
+    @media (min-width: 576px) {
+      #wda {
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+
+      #wda p {
+        display: block;
+      }
+
+      #wda h1 {
+        font-size: 30px;
+        padding-bottom: 0;
+      }
+
+      #wda span {
+        font-size: 26px;
+      }
+
+      #wda p {
+        font-size: 19px;
+      }
+
+      #wda img {
+        width: 250px;
+      }
+
+      #html,
+      #css,
+      #js,
+      #jquery,
+      #bootstrap,
+      #sass,
+      #vuejs {
+        display: none;
+      }
+    }
+
+    @media (min-width: 768px) {
+
+      #html,
+      #css,
+      #js,
+      #jquery,
+      #bootstrap,
+      #sass,
+      #vuejs {
+        width: 20vw;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      h1 {
+        font-size: 24px;
+        text-align: center;
+      }
+
+      p {
+        display: none;
+      }
+
+      #css {
+        position: absolute;
+        top: 13%;
+        left: 25%;
+      }
+
+      #css::after {
+        width: 13vw;
+        top: 80%;
+        left: 70%;
+        rotate: 25deg
+      }
+
+      #html {
+        position: absolute;
+        top: 27%;
+        left: 13%;
+      }
+
+      #html::after {
+        width: 24vw;
+        top: 75%;
+        left: 68%;
+        rotate: 7deg
+      }
+
+      #js {
+        position: absolute;
+        top: 57%;
+        left: 18%;
+      }
+
+      #js::after {
+        width: 19vw;
+        top: 37%;
+        left: 71%;
+        rotate: 170deg
+      }
+
+      #jquery {
+        position: absolute;
+        top: 77%;
+        left: 31%;
+      }
+
+      #jquery::after {
+        width: 10vw;
+        top: 1%;
+        left: 64%;
+        rotate: 141deg
+      }
+
+      #bootstrap {
+        position: absolute;
+        top: 13%;
+        left: 73%;
+      }
+
+      #bootstrap::after {
+        width: 11vw;
+        top: 85%;
+        left: -30%;
+        rotate: 150deg
+      }
+
+      #sass {
+        position: absolute;
+        top: 33%;
+        left: 88%;
+      }
+
+      #sass::after {
+        width: 24vw;
+        top: 75%;
+        left: -95%;
+        rotate: 175deg
+      }
+
+      #vuejs {
+        position: absolute;
+        top: 65%;
+        left: 79%;
+      }
+
+      #vuejs::after {
+        width: 17vw;
+        top: 14%;
+        left: -55%;
+        rotate: 200deg
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wda">
+    <div class="container">
+      <img src="./images/wda.png" alt="WDA">
+      <h1>泰山職訓局</h1>
+      <span>從零開始的網頁設計課程</span>
+      <p>
+        轉職網頁開發人員　掌握就業必備職能
+        <br>
+        由淺入深學習技術　強化職場的競爭力
+      </p>
+    </div>
+  </div>
+
+  <div id="html">
+    <div class="container">
+      <img src="./images/html.png" alt="HTML">
+      <h1>Html</h1>
+      <p>
+        超文本標記語言（英語：HyperText Markup
+        Language，簡稱：HTML）是一種用於建立網頁的標準標記語言。HTML是一種基礎技術，常與CSS、JavaScript一起被眾多網站用於設計網頁、網頁應用程式以及行動應用程式的使用者介面。網頁瀏覽器可以讀取HTML檔案，並將其彩現成視覺化網頁。HTML描述了一個網站的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。
+      </p>
+    </div>
+  </div>
+
+  <div id="css">
+    <div class="container">
+      <img src="./images/css.png" alt="CSS3">
+      <h1>CSS3</h1>
+      <p>
+        階層式樣式表（英語：Cascading Style
+        Sheets，縮寫：CSS；又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣式表）是一種用來為結構化文件（如HTML文件或XML應用）添加樣式（字型、間距和顏色等）的電腦語言，由W3C定義和維護。CSS3現在已被大部分現代瀏覽器支援，而下一版的CSS4仍在開發中。
+      </p>
+    </div>
+  </div>
+
+  <div id="js">
+    <div class="container">
+      <img src="./images/js.png" alt="JavaScript">
+      <h1>JavaScript</h1>
+      <p>
+        JavaScript（通常縮寫為JS）是一門基於原型和頭等函數的多範式進階直譯程式語言，它支援物件導向程式設計、指令式編程和函數式程式設計。它提供方法來操控文字、陣列、日期以及正規表示式等。不支援I/O，比如網路、儲存和圖形等，但這些都可以由它的宿主環境提供支援。它由Ecma透過ECMAScript實作語言的標準化。目前，它被世界上的絕大多數網站所使用，也被世界主流瀏覽器（Chrome、IE、Firefox、Safari和Opera）所支援。
+      </p>
+    </div>
+  </div>
+
+  <div id="jquery">
+    <div class="container">
+      <img src="./images/jq.png" alt="jQuery">
+      <h1>jQuery</h1>
+      <p>
+        jQuery是一套跨瀏覽器的JavaScript函式庫，用於簡化HTML與JavaScript之間的操作。約翰·雷西格（John Resig）在2006年1月的BarCamp NYC上釋出了第一個版本。目前由Dave
+        Methvin領導的團隊進行開發。全球前10,000個訪問最高的網站中，有65%使用了jQuery，是曾經最受歡迎的JavaScript函式庫。
+      </p>
+    </div>
+  </div>
+
+  <div id="bootstrap">
+    <div class="container">
+      <img src="./images/bs.png" alt="Bootstrap">
+      <h1>Bootstrap</h1>
+      <p>
+        Bootstrap是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，指的是展現給終端使用者的介面。與之對應的「後端」是在伺服器上面執行的代碼）框架，包括HTML、CSS及JavaScript的框架，提供字體排印、表單、按鈕、導航及其他各種元件及Javascript擴充套件，旨在使動態網頁和Web應用的開發更加容易。
+      </p>
+    </div>
+  </div>
+
+  <div id="sass">
+    <div class="container">
+      <img src="./images/sass.png" alt="Sass">
+      <h1>Sass</h1>
+      <p>
+        Sass（英文全稱：Syntactically Awesome Stylesheets）是一個最初由Hampton Catlin設計並由Natalie
+        Weizenbaum開發的層疊樣式表語言。在開發最初版本之後，Weizenbaum和Chris
+        Eppstein繼續通過SassScript來繼續擴充Sass的功能。SassScript是一個在Sass檔案中使用的小型手稿語言。
+      </p>
+    </div>
+  </div>
+
+  <div id="vuejs">
+    <div class="container">
+      <img src="./images/vue.png" alt="Vue.js">
+      <h1>Vue.js</h1>
+      <p>
+        Vue.js（/vjuː/，簡稱Vue）是一個用於建立使用者介面的開源MVVM前端JavaScript框架，也是一個建立單頁應用的Web應用框架。旨在更好地組織與簡化Web開發。Vue所關注的核心是MVC模式中的視圖層，同時，它也能方便地取得資料更新，並通過組件內部特定的方法實現視圖與模型的互動。
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
